@@ -1,0 +1,146 @@
+*{
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --bg-color:hsl(0, 0%, 95%);
+  --second-bg-color:hsl(210, 20%, 82%);
+  --main:green;
+  --text-color:black;
+}
+body{
+  background-color: var(--second-bg-color);
+}
+header{
+  position: fixed;
+  padding: 10px 10px 15% 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  overflow: hidden;
+  background-color: var(--second-bg-color);
+  z-index: 100;
+}
+.keziestore{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.navbar{
+  position: fixed;
+  display: flex;
+  justify-content:space-between;
+  background-color:var(--second-bg-color);
+  padding: 10px 0px;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  z-index: 100;
+}
+.navbar a{
+  border: 1px solid hsl(210, 20%, 92%);
+  padding: 5px;
+  background-color: hsl(210, 20%, 92%);
+  border-radius: 50px;
+}
+.navbar a :hover{
+  background-color: hsl(210, 20%, 98%);
+  color: hsl(0, 0%, 55%);
+}
+.menu{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+#close{
+  display: none;
+  font-size: 2rem;
+  color: black;
+}
+.category-container{
+  display:none;
+  position: fixed;
+  top: 94px;
+  right: 0;
+  width: 300px;
+  min-height:100vh;
+  background-color: white;
+  overflow-y: auto;
+  margin-top: -2%;
+  padding:20% 20px 20px 20px;
+  transition: right 0.3s ease;
+  z-index: 99;
+}
+.category-container a{
+  display: block;
+  padding: 5% 0px;
+  font-size: 2rem;
+  color: hsl(210, 50%, 50%);
+}
+summary::-webkit-details-marker{
+  display: none;
+}
+
+.category-container summary {
+  padding: 5% 0px;
+  font-size: 2rem;
+  color: hsl(210, 50%, 50%);
+}
+ @media(min-width:500px){
+  header{
+    height: 140px;
+  }
+  .homepage{
+    display: flex;
+    justify-content: space-between;
+  }
+ }
+.homepage{
+  margin-top: 150px;
+  padding:20px 10px 10% 10px;
+  background-color:var(--second-bg-color);
+}
+.firstbox h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.firstbox p{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.forshop{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  margin-top: 15%;
+  align-items: center;
+  text-align: center;
+}
+.shopnow:hover{
+  color: hsl(0, 0%, 55%);
+  background-color: hsl(0, 0%, 80%);
+}
+.shopnow{
+  padding: 10px 25px;
+  background: black;
+  color:white;
+  border-radius: 10px;
+  margin-right:10%;
+}
+.homepage img{
+  height: 500px;
+  width:380px;
+  border-radius: 5px;
+}
+
