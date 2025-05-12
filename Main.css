@@ -118,7 +118,7 @@ summary::-webkit-details-marker{
 .firstbox h1{
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .firstbox p{
   font-size: 1rem;
@@ -126,9 +126,9 @@ summary::-webkit-details-marker{
 }
 .forshop{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 10%;
-  margin-top: 15%;
+  margin-top: 10%;
   align-items: center;
   text-align: center;
 }
