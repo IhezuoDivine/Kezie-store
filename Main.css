@@ -36,6 +36,12 @@ header{
   align-items: center;
   text-align: center;
 }
+.keziestore a i {
+  color: black;
+}
+.keziestore a i:hover{
+  color: hsl(210, 20%, 98%);
+}
 .navbar{
   position: fixed;
   display: flex;
