@@ -124,7 +124,7 @@ summary{
     justify-content: space-between;
   }
  }
- @media(max-width:1000px){
+ @media(min-width:1000px){
   .homepage img{
     width: 500px;
   }
