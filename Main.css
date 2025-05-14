@@ -124,6 +124,11 @@ summary{
     justify-content: space-between;
   }
  }
+ @media(max-width:1000px){
+  .homepage img{
+    width: 500px;
+  }
+ }
 .homepage{
   margin-top: 150px;
   padding:20px 10px 10% 10px;
