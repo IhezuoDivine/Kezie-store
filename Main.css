@@ -180,6 +180,7 @@ summary{
   font-weight: bold;
   font-family: 'Courier New', Courier;
   padding-top: 5%;
+  padding-left: 2%;
 }
 .newcollection1{
   padding: 5% 10px;
@@ -246,7 +247,7 @@ summary{
   background-color: var(--bg-color);
 }
 .allproducth1{
-  padding: 5% 0px;
+  padding: 5% 0px 5% 2%;
 }
 .allproductcontainer{
   display: grid;
@@ -346,6 +347,13 @@ summary{
   background-color: hsl(0, 0%, 35%);
   color: hsl(0, 0%, 55%);
 }
+
+#menwear,
+#wemenwear,
+#kids{
+  grid-column: 1 / -1;
+}
+
 .bestproduct{
   text-align: center;
   align-items: center;
@@ -383,6 +391,13 @@ summary{
   gap: 10px;
   padding-bottom: 3%;
 }
+@media(min-width:700px){
+  .bestproductimg img{
+    width: 430px;
+    height: 600px;
+    border-radius: 10px;
+  }
+}
 .bestproductimg img{
   width: 200px;
   height: 200px;
@@ -418,7 +433,6 @@ summary{
   
 }
 .faqsbox{
-  margin-bottom: 10%;
   padding: 5%;
 }
 .faqsbox p{
@@ -440,11 +454,15 @@ summary{
   font-size: 16px;
   margin-left: 5%;
 }
+.faqs a:hover{
+  color: hsl(0, 0%, 55%);
+  background-color: hsl(0, 0%, 35%);
+}
 .last{
   background-color: hsl(210, 20%, 95%);
 }
 .stayupdated{
-  background-image: url(IMG-WA0029.jpg);
+  background-image: url(IMG_4592.jpg);
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -464,7 +482,7 @@ summary{
 .stayupdated h2{
   font-size: 30px;
   font-weight: bolder;
-  color: black;
+  color: white;
   margin-bottom: 5%;
 }
 .stayupdated a{
@@ -530,7 +548,7 @@ summary{
 }
 .social-icons{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 5%;
 }
 .social-icons a i{
