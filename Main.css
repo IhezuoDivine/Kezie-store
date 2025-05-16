@@ -391,17 +391,25 @@ summary{
   gap: 10px;
   padding-bottom: 3%;
 }
-@media(min-width:700px){
-  .bestproductimg img{
-    width: 430px;
-    height: 600px;
-    border-radius: 10px;
-  }
-}
 .bestproductimg img{
   width: 200px;
   height: 200px;
   border-radius: 10px;
+}
+@media screen and (min-width:700px){
+  .bestproductimg img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+  }
+  .bestproductimg{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 10px;
+    padding-bottom: 3%;
+  }
 }
 .faqs{
   align-items: center;
@@ -474,7 +482,7 @@ summary{
 }
 @media(min-width:700px){
   .stayupdated {
-    min-height: 100vh;
+    height:700px;
     background-repeat: no-repeat;
     margin-bottom: 10%;
   }
