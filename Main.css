@@ -1016,13 +1016,16 @@ footer{
 .footernavbar li{
   margin-top: 15px;
   padding: 5px;
+  background-color: var(--bg-color);
 }
-.footernavbar a {
+.footernavbar a ,
+#footercheckout{
   color: black;
   align-items: center;
   font-size: 20px;
   padding: 5px;
   font-weight: bolder;
+  background: var(--bg-color);
 }
 .footernavbar ul li a:hover,
 .social-icons a i:hover{
