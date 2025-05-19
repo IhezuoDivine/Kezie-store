@@ -241,7 +241,6 @@ summary{
   border-radius: 10px;
   background-color: var(--second-bg-color);
 }
-
 .allproduct{
   padding: 5% 0px;
   background-color: var(--bg-color);
@@ -256,13 +255,15 @@ summary{
   gap: 20px;
   background-color: var(--bg-color);
 } 
+
 .allproductpagehide{
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fill,380px);
   justify-content: center;
   gap: 20px;
   background-color: var(--bg-color);
 }
+
 .allproductcontainer  div,
 .allproductpagehide div{
   padding: 5% 15px;
@@ -311,11 +312,10 @@ summary{
   }
   
   .allproductpagehide{
-    display: grid;
+    display:none;
     grid-template-columns: repeat(auto-fill,170px);
     gap: 5px;
     justify-content: center;
-    background-color: var();
   }
   .allproductcontainer h1,
   .allproductpagehide h1{
@@ -398,8 +398,8 @@ summary{
 }
 @media screen and (min-width:700px){
   .bestproductimg img{
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     border-radius: 10px;
   }
   .bestproductimg{
@@ -527,6 +527,18 @@ summary{
 .t2 p{
   padding-bottom: 3%;
 }
+.trendingproductsimg{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 170px);
+  gap: 10px;
+  justify-content: center;
+}
+.trendingproductsimg img{
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 @media(min-width:700px){
   .t1,.t2,.t2h3{
     font-size: 2rem;
@@ -534,21 +546,480 @@ summary{
   .trendingproducts{
     padding-bottom: 5%;
   }
+  .trendingproductsimg{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 370px);
+    gap: 10px;
+    justify-content: center;
+  }
+  .trendingproductsimg img{
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
 }
-
 .t2h3 {
   width: 50%;
 }
 
-.footernavbar ul li a{
+.allhidden{
+  background-color: var(--bg-color);
+}
+#cart{
+  display: none;
+  place-items: center;
+  align-items: center;
+  text-align: center;
   color: black;
-  padding: 5%;
+  padding-top: 200px;
+  margin-bottom: 10%;
+  background-color: var(--bg-color);
+}
+#cart h1{
+  font-size:20px;
+  margin-top: 10%;
+}
+#cart input{
+  width:380px;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+@media(min-width:600px){
+  #cart {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+  #cart input{
+    width: 400px;
+  }
+}
+#cart h5{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#cart p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#cart .signup{
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: black;
+  background-color: orange;
+}
+.startshopingcart{
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+}
+#cart a:hover,
+.profilesignin{
+  background-color: hsl(30, 100%, 90%);
+  border: none;
+}
+
+.profile1{
+  display: grid;
+  place-items: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 200px 1px 60px 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+.profilesignin{
+  padding: 10px 25px;
+  color: black;
+  border-radius: 50px;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color:hsl(30, 100%, 40%);
+}
+.profilebox1{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.profilebox1 a{
+  font-size: 13px;
+  color: black;
+}
+.profilebox2{
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 5%;
+}
+.profilebox2 a{
+  display: block;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.auth-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.form-box {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.form-box h2 {
+  text-align: center;
+  color: hsl(30, 100%, 40%);
+  margin-bottom: 20px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-box input {
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  padding: 12px;
+  background-color: hsl(30, 100%, 40%);
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: hsl(30, 100%, 35%);
+}
+
+.toggle-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95em;
+  cursor: pointer;
+  color: hsl(30, 100%, 40%);
+}
+
+.toggle-link span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: block;
+}
+.checkout {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+  padding-top: 200px;
+}
+
+.checkout-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.checkout-container h2 {
+  text-align: center;
+  color: hsl(30, 100%, 40%);
+  margin-bottom: 30px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form h3 {
+  margin-top: 25px;
+  color: hsl(30, 100%, 35%);
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout-form p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.checkout-form button {
+  margin-top: 20px;
+  padding: 14px;
+  background-color: hsl(30, 100%, 40%);
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: hsl(30, 100%, 35%);
+}
+
+.about-us {
+  background-color: hsl(30, 100%, 97%);
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding-top: 200px;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: hsl(30, 100%, 40%);
+}
+
+.about-container p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  padding-top: 5%;
+  margin-bottom: 15px;
+}
+.privacy-policy {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  padding-top: 200px;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.privacy-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: hsl(30, 100%, 40%);
+  text-align: center;
+}
+
+.privacy-container h3 {
+  margin-top: 30px;
+  color: hsl(30, 100%, 35%);
+}
+
+.privacy-container p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+.contact-us {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding-top: 200px;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: hsl(30, 100%, 40%);
+}
+
+.contact-container p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: hsl(30, 100%, 40%);
+  color: white;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: hsl(30, 100%, 35%);
+}
+
+.contact-details {
+  margin-top: 30px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+@media (min-width: 600px) {
+  .profile1,
+  .about-container,
+  .privacy-container,
+  .contact-container,
+  .checkout-container,
+  .auth-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .contact-form,
+  .checkout-form,
+  .auth-container form {
+    max-width: 100%;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+}
+
+.settings-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.settings-container h2 {
+  text-align: center;
+  color: hsl(30, 100%, 40%);
+  margin-bottom: 30px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-form h3 {
+  margin-top: 30px;
+  color: hsl(30, 100%, 35%);
+}
+
+.settings-form input[type="text"],
+.settings-form input[type="email"],
+.settings-form input[type="password"] {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.settings-form label {
+  font-size: 0.95em;
+  display: block;
+  margin: 10px 0;
+}
+
+.settings-form button {
+  padding: 15px;
+  background-color: hsl(30, 100%, 40%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.settings-form button:hover {
+  background-color: hsl(30, 100%, 35%);
+}
+
+/* Responsive layout for wider screens */
+@media (min-width: 600px) {
+  .settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+footer{
+  padding-top: 5%;
+} 
+.footernavbar ul{
+  padding-top: 5% ;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+.footernavbar li{
+  margin-top: 5%;
+  padding: 5px;
+}
+.footernavbar a {
+  color: black;
   align-items: center;
   font-size: 20px;
-  padding-top: 8%;
-}
-.footernavbar li {
-  margin-top: 3%;
+  padding: 5px;
+  font-weight: bolder;
 }
 .footernavbar ul li a:hover,
 .social-icons a i:hover{
@@ -569,5 +1040,19 @@ summary{
 footer p{
   align-items: center;
   text-align: center;
+}
+
+
+#main{
+  display: block;
+}
+#profile,
+#signup,
+#checkout,
+#aboutus,
+#privacy,
+#contactus,
+#settings{
+  display: none;
 }
 
