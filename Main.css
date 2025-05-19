@@ -1034,7 +1034,7 @@ footer{
 .social-icons{
   display: flex;
   justify-content: space-evenly;
-  padding: 5%;
+  padding: 5px 5%;
 }
 .social-icons a i{
   background-color:black;
