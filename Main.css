@@ -500,6 +500,10 @@ summary{
   color: white;
   border-radius: 5px;
 }
+.stayupdated a:hover{
+  color: hsl(0, 0%, 80%);
+  background-color: hsl(210, 20%, 58%);
+}
 
 .trendingproducts{
   display: block;
@@ -995,7 +999,6 @@ summary{
   background-color: hsl(30, 100%, 35%);
 }
 
-/* Responsive layout for wider screens */
 @media (min-width: 600px) {
   .settings-container {
     max-width: 800px;
@@ -1011,7 +1014,7 @@ footer{
   padding-left: 5%;
 }
 .footernavbar li{
-  margin-top: 5%;
+  margin-top: 15px;
   padding: 5px;
 }
 .footernavbar a {
@@ -1040,6 +1043,7 @@ footer{
 footer p{
   align-items: center;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 
