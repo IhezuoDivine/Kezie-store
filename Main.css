@@ -934,7 +934,9 @@ summary{
     margin: 0 auto;
     padding-top: 100px;
   }
-
+  .profile1{
+    margin-top: 70px;
+  }
   .contact-form,
   .checkout-form,
   .auth-container form {
@@ -951,6 +953,8 @@ summary{
   padding: 60px 20px;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
+  width: 100%;
+  padding-top: 200px;
 }
 
 .settings-container h2 {
@@ -1001,8 +1005,9 @@ summary{
 
 @media (min-width: 600px) {
   .settings-container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
+    padding-top: 50px;
   }
 }
 footer{
